@@ -113,4 +113,9 @@ footer p {
     .contact-section h2 {
         font-size: 2em;
     }
+
+.instaFace img{
+    color: greenyellow;
+    width: 30px;
+}
 }
