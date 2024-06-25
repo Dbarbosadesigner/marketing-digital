@@ -7,6 +7,8 @@
 
 .videoBurguer video {
     max-width: 300px;
+    border: 5px solid #00e676;
+    border-radius: 8px;
 }
 
 body {
@@ -19,6 +21,15 @@ body {
     max-width: 1200px;
     margin: 0 auto;
     padding: 20px;
+}
+
+.animationFadeIn{   /*classe criada*/
+    animation: fadeIn 1.2s linear;      /*animação definida "Tempo"*/ 
+}
+
+@keyframes fadeIn {         /*criando frames para definir animação*/
+    from{opacity: 0;}           /*inicio da animação*/
+    to{opacity: 1;}            /*final da animação*/
 }
 
 .hero-section {
@@ -67,6 +78,15 @@ body {
     padding: 20px;
     background-color: #292929;
     border-radius: 5px;
+
+}
+
+.transition{
+    transition: transform 0.5s;
+}
+
+.transition:hover {
+    transform: scale(1.1);
 }
 
 .service h3 {
