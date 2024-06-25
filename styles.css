@@ -6,9 +6,8 @@
 }
 
 .videoBurguer video {
-    max-width: 300px;
-    border: 5px solid #00e676;
-    border-radius: 8px;
+    max-width: 500px;
+
 }
 
 body {
