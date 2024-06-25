@@ -5,8 +5,13 @@
     font-family: 'Arial', sans-serif;
 }
 
+.videoBurguer {
+    width: 100%;
+    max-width: 800px;
+}
+
 .videoBurguer video {
-    max-width: 500px;
+    max-width: 300px;
 
 }
 
