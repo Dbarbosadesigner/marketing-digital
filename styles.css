@@ -14,10 +14,12 @@
 
 .sectionSobre{
     position: relative;
+    display: block;
     height: 300px;
     background-color: white;
     color: #141e30;
     padding-top: 10px;
+    padding-bottom: 0%;
     box-shadow: inset 10 10 30px rgba(0, 0, 0, 0)
 
 }
@@ -74,8 +76,8 @@ header {
 
 nav ul {
     list-style: none;
-    margin: 5px;
-    padding: 5px;
+    margin: 0;
+    padding: 0;
     display: flex;
 } 
 
@@ -88,10 +90,17 @@ nav ul li a {
     font-size: 1em;
 }
 
+.menu-toggle {
+    display: none;
+    font-size: 1.5em;
+    cursor: pointer;
+    right: 0px;
+}
+
 .hero-section {
     background: linear-gradient(to right, #141e30, #243b55);
     text-align: center;
-    padding: 50px 0px;
+    padding: 0px 0px;
 }
 
 .hero-section h1 {
@@ -111,7 +120,7 @@ nav ul li a {
     text-decoration: none;
     font-size: 1em;
     border-radius: 5px;
-    transition: background-color 0.3s;
+    transition:background-color 0.3s;
 }
 
 .cta-button:hover {
@@ -174,6 +183,46 @@ footer {
 
 footer p {
     font-size: 0.9em;
+}
+
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: row;
+        position: relative;
+        top: 60px;
+        left: 50px;
+        width: 100%;
+        background-color: #333;
+        display: none;
+    }
+
+    nav ul.active {
+        display: flex;
+    }
+
+    nav ul li {
+        margin-left: 50px;
+        margin-top: 10px;
+    }
+
+    .menu-toggle {
+        display: flex;
+        left: 100px;
+        
+    }
+
+    .hero-section h1 {
+        font-size: 2em;
+    }
+
+    .cta-button {
+        font-size: 0.9em;
+    }
+
+    .services-section h2,
+    .contact-section h2 {
+        font-size: 2em;
+    }
 }
 
 @media (max-width: 768px) {
