@@ -18,6 +18,7 @@
     background-color: white;
     color: #141e30;
     padding-top: 10px;
+    box-shadow: inset 10 10 30px rgba(0, 0, 0, 0)
 
 }
 
@@ -83,6 +84,7 @@ nav ul li {
 }
 
 nav ul li a {
+    color: #00c853;
     font-size: 1em;
 }
 
@@ -165,7 +167,7 @@ nav ul li a {
 }
 
 footer {
-    background-color: #141414;
+    background-color: #242424;
     text-align: center;
     padding: 20px;
 }
